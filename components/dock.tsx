@@ -93,7 +93,8 @@ function DockItem({
       aria-haspopup="true"
     >
       {Children.map(children, (child) =>
-        cloneElement(child as React.ReactElement, {})
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        cloneElement(child as React.ReactElement<any>, { isHovered })
       )}
     </motion.div>
   );
@@ -102,14 +103,14 @@ function DockItem({
 type DockLabelProps = {
   className?: string;
   children: React.ReactNode;
+  isHovered: MotionValue<number>;
 };
 
-function DockLabel({ children, className = "", ...rest }: DockLabelProps) {
-  const { isHovered } = rest as { isHovered: MotionValue<number> };
+function DockLabel({ children, className = "", isHovered }: DockLabelProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const unsubscribe = isHovered.on("change", (latest) => {
+    const unsubscribe = isHovered.onChange((latest) => {
       setIsVisible(latest === 1);
     });
     return () => unsubscribe();
@@ -198,7 +199,7 @@ export default function Dock({
             baseItemSize={baseItemSize}
           >
             <DockIcon>{item.icon}</DockIcon>
-            <DockLabel>{item.label}</DockLabel>
+            <DockLabel isHovered={isHovered}>{item.label}</DockLabel>
           </DockItem>
         ))}
       </motion.div>
