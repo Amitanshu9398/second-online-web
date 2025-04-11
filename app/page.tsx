@@ -1,7 +1,6 @@
 "use client";
 
 import Aurora from "@/components/aurora";
-import Dock from "@/components/dock";
 import {
   VscHome,
   VscArchive,
@@ -9,6 +8,7 @@ import {
   VscSettingsGear,
 } from "react-icons/vsc";
 import TrueFocus from "@/components/truefoocus";
+import Dock from "@/components/dock";
 
 export default function Home() {
   const items = [
