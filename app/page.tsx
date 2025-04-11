@@ -1,14 +1,12 @@
 "use client";
 
 import Aurora from "@/components/aurora";
-import {
-  VscHome,
-  VscArchive,
-  VscAccount,
-  VscSettingsGear,
-} from "react-icons/vsc";
+import { VscHome, VscAccount } from "react-icons/vsc";
 import TrueFocus from "@/components/truefoocus";
 import Dock from "@/components/dock";
+import { LiaConnectdevelop } from "react-icons/lia";
+import { GoProject } from "react-icons/go";
+import SpotlightCard from "@/components/spotlightcard";
 
 export default function Home() {
   const items = [
@@ -18,19 +16,19 @@ export default function Home() {
       onClick: () => alert("Home!"),
     },
     {
-      icon: <VscArchive size={18} />,
-      label: "Archive",
-      onClick: () => alert("Archive!"),
-    },
-    {
       icon: <VscAccount size={18} />,
       label: "Profile",
       onClick: () => alert("Profile!"),
     },
     {
-      icon: <VscSettingsGear size={18} />,
-      label: "Settings",
+      icon: <GoProject size={18} />,
+      label: "Projects",
       onClick: () => alert("Settings!"),
+    },
+    {
+      icon: <LiaConnectdevelop size={18} />,
+      label: "Connect",
+      onClick: () => alert("Archive!"),
     },
   ];
   return (
@@ -62,8 +60,45 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="w-full h-screen bg-zinc-950">
-
+      <div className="w-full h-screen bg-zinc-950 ">
+        <div className="lg:m-[4vh] flex lg:gap-8 sm:gap-1 sm:m-[1vh]">
+          <SpotlightCard
+            className="w-[30%] h-[20vh] sm:h-[40vh]"
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          >
+            Content goes here
+            <button className="border-1 rounded-full bottom-0 border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]">
+              Click Me!
+            </button>
+          </SpotlightCard>
+          <SpotlightCard
+            className="w-[35%] h-[20vh] sm:h-[30vh]"
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          >
+            Content goes here
+            <button className="border-1 rounded-full bottom-0 border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]">
+              Click Me!
+            </button>
+          </SpotlightCard>
+          <SpotlightCard
+            className="w-[35%] h-[20vh] sm:h-[45vh]"
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          >
+            Content goes here
+            <button className="border-1 rounded-full bottom-0 border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]">
+              Click Me!
+            </button>
+          </SpotlightCard>
+          <SpotlightCard
+            className="w-[35%] h-[20vh] sm:h-[36vh]"
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          >
+            Content goes here
+            <button className="border-1 rounded-full bottom-0 border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]">
+              Click Me!
+            </button>
+          </SpotlightCard>
+        </div>
       </div>
     </main>
   );
