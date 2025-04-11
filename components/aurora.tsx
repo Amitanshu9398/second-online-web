@@ -158,15 +158,20 @@ export default function Aurora(props: AuroraProps) {
         uTime: { value: 0 },
         uAmplitude: { value: amplitude },
         uColorStops: { value: colorStopsArray },
-        uResolution: { value: [ctn.offsetWidth, ctn.offsetHeight] },
+        uResolution: {
+          value: [
+            ctn.offsetWidth * window.devicePixelRatio,
+            ctn.offsetHeight * window.devicePixelRatio,
+          ],
+        },
         uBlend: { value: blend },
       },
     });
 
     function resize() {
       if (!ctn) return;
-      const width = ctn.offsetWidth;
-      const height = ctn.offsetHeight;
+      const width = ctn.offsetWidth * window.devicePixelRatio;
+      const height = ctn.offsetHeight * window.devicePixelRatio;
       renderer.setSize(width, height);
       program.uniforms.uResolution.value = [width, height];
     }
