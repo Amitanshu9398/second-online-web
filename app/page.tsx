@@ -7,8 +7,32 @@ import Dock from "@/components/dock";
 import { LiaConnectdevelop } from "react-icons/lia";
 import { GoProject } from "react-icons/go";
 import SpotlightCard from "@/components/spotlightcard";
+import FlowingMenu from "@/components/flowingmenu";
 
 export default function Home() {
+  const demoItems = [
+    {
+      link: "#cards",
+      text: "AMIT",
+      image: "https://picsum.photos/600/400?random=1",
+    },
+    {
+      link: "#",
+      text: "Anshu",
+      image: "https://picsum.photos/600/400?random=2",
+    },
+    {
+      link: "#",
+      text: "Monterey",
+      image: "https://picsum.photos/600/400?random=3",
+    },
+    {
+      link: "#",
+      text: "Sequoia",
+      image: "https://picsum.photos/600/400?random=4",
+    },
+  ];
+
   const items = [
     {
       icon: <VscHome size={18} />,
@@ -60,8 +84,8 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="w-full h-screen bg-zinc-950 ">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-[9] lg:m-[16] gap-[4] m-[4]">
+      <div className="w-full h-[200vh] bg-zinc-950 ">
+        <div id="cards" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-[9] lg:m-[16] gap-[4] m-[4]">
           <SpotlightCard
             className="relative"
             spotlightColor="rgba(58, 41, 255, 0.3)"
@@ -72,7 +96,10 @@ export default function Home() {
               nasjaaj ahjjjjhah hjjjhahjajj nhjahjsdhja
               ajshajdhjahdjsahjjaasjasjjajs asakjjjaj ajshjahsja yy..........
             </div>
-            <button className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]" title="Click">
+            <button
+              className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]"
+              title="Click"
+            >
               Click Me!
             </button>
           </SpotlightCard>
@@ -86,7 +113,10 @@ export default function Home() {
               nasjaaj ahjjjjhah hjjjhahjajj nhjahjsdhja
               ajshajdhjahdjsahjjaasjasjjajs asakjjjaj ajshjahsja yy..........
             </div>
-            <button className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]" title="Click">
+            <button
+              className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]"
+              title="Click"
+            >
               Click Me!
             </button>
           </SpotlightCard>
@@ -100,7 +130,10 @@ export default function Home() {
               nasjaaj ahjjjjhah hjjjhahjajj nhjahjsdhja
               ajshajdhjahdjsahjjaasjasjjajs asakjjjaj ajshjahsja yy..........
             </div>
-            <button className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]" title="Click">
+            <button
+              className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]"
+              title="Click"
+            >
               Click Me!
             </button>
           </SpotlightCard>
@@ -114,7 +147,10 @@ export default function Home() {
               nasjaaj ahjjjjhah hjjjhahjajj nhjahjsdhja
               ajshajdhjahdjsahjjaasjasjjajs asakjjjaj ajshjahsja yy..........
             </div>
-            <button className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]" title="Click">
+            <button
+              className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]"
+              title="Click"
+            >
               Click Me!
             </button>
           </SpotlightCard>
@@ -128,10 +164,16 @@ export default function Home() {
               nasjaaj ahjjjjhah hjjjhahjajj nhjahjsdhja
               ajshajdhjahdjsahjjaasjasjjajs asakjjjaj ajshjahsja yy..........
             </div>
-            <button className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]" title="Click">
+            <button
+              className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]"
+              title="Click"
+            >
               Click Me!
             </button>
           </SpotlightCard>
+        </div>
+        <div style={{ height: "250px", position: "relative" }}>
+          <FlowingMenu items={demoItems} />
         </div>
       </div>
     </main>
