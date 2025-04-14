@@ -46,7 +46,7 @@ export default function Home() {
         <Aurora
           colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
           blend={0.5}
-          amplitude={0.8}
+          amplitude={0.2}
           speed={0.5}
         />
         <div className="absolute z-10 w-[90%] sm:w-[80%] md:w-[60%] flex justify-center items-center text-center">
@@ -61,40 +61,74 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-screen bg-zinc-950 ">
-        <div className="lg:m-[4vh] flex lg:gap-8 sm:gap-1 sm:m-[1vh]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-[9] lg:m-[16] gap-[4] m-[4]">
           <SpotlightCard
-            className="w-[30%] h-[20vh] sm:h-[40vh]"
-            spotlightColor="rgba(0, 229, 255, 0.2)"
+            className="relative"
+            spotlightColor="rgba(58, 41, 255, 0.3)"
           >
-            Content goes here
-            <button className="border-1 rounded-full bottom-0 border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]">
+            <div className="text-ellipsis overflow-hidden cursor-default line-clamp-3">
+              first content page might change later just wanna see the changes
+              how to see the see the thet tehete ahad athe shagsggsgs agshhhssa
+              nasjaaj ahjjjjhah hjjjhahjajj nhjahjsdhja
+              ajshajdhjahdjsahjjaasjasjjajs asakjjjaj ajshjahsja yy..........
+            </div>
+            <button className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]" title="Click">
               Click Me!
             </button>
           </SpotlightCard>
           <SpotlightCard
-            className="w-[35%] h-[20vh] sm:h-[30vh]"
-            spotlightColor="rgba(0, 229, 255, 0.2)"
+            className="relative"
+            spotlightColor="rgba(58, 41, 255, 0.3)"
           >
-            Content goes here
-            <button className="border-1 rounded-full bottom-0 border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]">
+            <div className="text-ellipsis overflow-hidden cursor-default line-clamp-3">
+              first content page might change later just wanna see the changes
+              how to see the see the thet tehete ahad athe shagsggsgs agshhhssa
+              nasjaaj ahjjjjhah hjjjhahjajj nhjahjsdhja
+              ajshajdhjahdjsahjjaasjasjjajs asakjjjaj ajshjahsja yy..........
+            </div>
+            <button className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]" title="Click">
               Click Me!
             </button>
           </SpotlightCard>
           <SpotlightCard
-            className="w-[35%] h-[20vh] sm:h-[45vh]"
-            spotlightColor="rgba(0, 229, 255, 0.2)"
+            className="relative"
+            spotlightColor="rgba(58, 41, 255, 0.3)"
           >
-            Content goes here
-            <button className="border-1 rounded-full bottom-0 border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]">
+            <div className="text-ellipsis overflow-hidden cursor-default line-clamp-3">
+              first content page might change later just wanna see the changes
+              how to see the see the thet tehete ahad athe shagsggsgs agshhhssa
+              nasjaaj ahjjjjhah hjjjhahjajj nhjahjsdhja
+              ajshajdhjahdjsahjjaasjasjjajs asakjjjaj ajshjahsja yy..........
+            </div>
+            <button className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]" title="Click">
               Click Me!
             </button>
           </SpotlightCard>
           <SpotlightCard
-            className="w-[35%] h-[20vh] sm:h-[36vh]"
-            spotlightColor="rgba(0, 229, 255, 0.2)"
+            className="relative"
+            spotlightColor="rgba(58, 41, 255, 0.3)"
           >
-            Content goes here
-            <button className="border-1 rounded-full bottom-0 border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]">
+            <div className="text-ellipsis overflow-hidden cursor-default line-clamp-3">
+              first content page might change later just wanna see the changes
+              how to see the see the thet tehete ahad athe shagsggsgs agshhhssa
+              nasjaaj ahjjjjhah hjjjhahjajj nhjahjsdhja
+              ajshajdhjahdjsahjjaasjasjjajs asakjjjaj ajshjahsja yy..........
+            </div>
+            <button className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]" title="Click">
+              Click Me!
+            </button>
+          </SpotlightCard>
+          <SpotlightCard
+            className="relative"
+            spotlightColor="rgba(58, 41, 255, 0.3)"
+          >
+            <div className="text-ellipsis overflow-hidden cursor-default line-clamp-3">
+              first content page might change later just wanna see the changes
+              how to see the see the thet tehete ahad athe shagsggsgs agshhhssa
+              nasjaaj ahjjjjhah hjjjhahjajj nhjahjsdhja
+              ajshajdhjahdjsahjjaasjasjjajs asakjjjaj ajshjahsja yy..........
+            </div>
+            <button className="absolute hover:font-bold border-1 rounded-full bottom-[2vh] border-[rgba(0,_229,_255,_0.6)] text-white cursor-pointer p-[1vh]" title="Click">
               Click Me!
             </button>
           </SpotlightCard>
