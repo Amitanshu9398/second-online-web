@@ -85,7 +85,10 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-[200vh] bg-zinc-950 ">
-        <div id="cards" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-[9] lg:m-[16] gap-[4] m-[4]">
+        <div
+          id="cards"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-[9] lg:m-[16] gap-[4] m-[4]"
+        >
           <SpotlightCard
             className="relative"
             spotlightColor="rgba(58, 41, 255, 0.3)"
